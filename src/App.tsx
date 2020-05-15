@@ -4,7 +4,7 @@ import {Element} from "react-scroll/modules";
 import Hunters from "./components/Hunters";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
-import ListItem from "./components/ListItem";
+
 import Parallax from "./components/Parallax";
 import { scroller } from 'react-scroll';
 
@@ -63,7 +63,7 @@ function App() {
 							</Carousel.Item>
 						</Carousel>
 
-						<Navbar bg="warning" variant="light" className="sticky-top" style={{ marginRight: "-8%"}}>
+						<Navbar bg="danger" variant="dark" className="sticky-top" style={{ marginRight: "-5%"}}>
 							<Nav className="ml-auto">
 								<Nav.Link onClick={scrollTo('home')}>Home</Nav.Link>
 								<Nav.Link onClick={scrollTo('services')}>Services</Nav.Link>
