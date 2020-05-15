@@ -1,0 +1,43 @@
+.parallax {
+
+	/* Set a specific height */
+	padding: 70px;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	.blockquote {
+
+		text-align: center;
+		font-size: 2em;
+		color: #FFF;
+		text-shadow: 2px 2px #000000;
+
+		p {
+
+			&::before {
+				content: open-quote;
+			}
+			&::after {
+				content: close-quote;
+			}
+		}
+
+		.blockquote-footer {
+			color: #FFF;
+		}
+
+	}
+
+}
+
+.page {
+	.parallax {
+		margin-left: -35px;
+		margin-right: -35px;
+		margin-bottom: 15px;
+	}
+}

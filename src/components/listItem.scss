@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
+
+.list-item {
+
+
+
+	.list-number {
+		display: block;
+		font-family: 'Bevan';
+		font-size: 5em;
+		padding-right: 10px;
+		color: rgba(0,0,0,0.5);
+		width:75px;
+		text-align: center;
+	}
+
+	.list-title {
+		font-weight: bold;
+	}
+
+	.list-content {
+		width: 100%;
+	}
+
+}
