@@ -99,6 +99,30 @@ function App() {
 										</Figure.Caption>
 									</Figure>
 								</Col>
+								<Col xs={6}>
+									<Figure onClick={scrollTo('iko-cambridge')}>
+										<Figure.Image src={Hunters.Images.ikoCambridge} rounded />
+										<Figure.Caption>
+											IKO Cambridge Installation
+										</Figure.Caption>
+									</Figure>
+								</Col>
+								<Col xs={6}>
+									<Figure onClick={scrollTo('gutters')}>
+										<Figure.Image src={Hunters.Images.gutters} rounded />
+										<Figure.Caption>
+											Continuous Gutters
+										</Figure.Caption>
+									</Figure>
+								</Col>
+								<Col xs={12}>
+									<Figure onClick={scrollTo('other-services')}>
+										<Figure.Image src={Hunters.Images.soffits} rounded style={{ objectPosition: "center -100px" }}/>
+										<Figure.Caption>
+											Soffits, Facia & Siding Installations & Repair
+										</Figure.Caption>
+									</Figure>
+								</Col>
 							</Row>
 
 						</div>
@@ -191,68 +215,167 @@ function App() {
 
 						</div>
 
+						<Element name="iko-cambridge" />
+
+						<div className="page">
+							<h1>IKO Cambridge</h1>
+							<p>IKO Cambridge architectural shingles can enhance any home’s style, from traditional to modern, rustic to urban. Their dimensional profile and deep shadow bands evoke the upscale  appearance of natural wood shakes, creating a high-end designer look at an affordable cost.</p>
+
+							<Parallax img={Hunters.Images.ikoCambridgeRoof}>
+								High-quality roofing shingles provide superior weather protection and boost the curb appeal of homes throughout the United States and Canada
+							</Parallax>
+
+							<Hunters.ListItem number={1} title="Engineered for the Elements">
+								IKO Cambridge shingles are engineered to withstand the elements for years, making them one of the most durable shingles you can buy.
+							</Hunters.ListItem>
+
+							<Hunters.ListItem number={2} title="Full Range of Colours">
+								Thanks to their exclusive, advanced color blending technology, IKO Cambridge architectural roofing shingles are available in a full range of color blends (including Cool Colors for select markets). This is just one great reason why IKO Cambridge remains among our most popular shingles with homeowners and contractors alike.
+							</Hunters.ListItem>
+
+							<Hunters.ListItem number={3} title="The Size Advantage">
+								These shingles come in IKO’s special “Advantage” size which is larger than many competitors’ comparable product. This means roofers can install these shingles faster and their larger-than-average exposure creates greater visual interest, giving your home a spectacular designer look.
+							</Hunters.ListItem>
+
+							<Hunters.ListItem number={4} title="Guard Your Home">
+								IKO Cambridge shingles protect your home from algae and blow-offs with their exceptional bonding and fiberglass mat for inner core strength.
+							</Hunters.ListItem>
+
+							<Hunters.ListItem number={5} title="Heavy Duty">
+								IKO Cambridge roofing shingles are built heavy-duty. You can see and feel the difference. Touch one. Feel its weight. Check that the cut is precise.
+							</Hunters.ListItem>
+
+							<Hunters.ListItem number={6} title="Aesthetically Pleasing">
+								The modern, laminated two-piece design of IKO Cambridge shingles provides depth and dimension. By staggering the size and position of the shingle’s “dragon’s teeth”, we’re able to create a random, varied pattern that emulates the rich textured appearance of genuine wood shakes. Deep shadow bands add eye-popping contrast.
+							</Hunters.ListItem>
+
+						</div>
+
+						<Element name="gutters" />
+
+						<div className="page">
+							<h1>Continuous/Seamless Gutters</h1>
+							<p>Seamless gutters are superior to their sectional counterparts because they minimize leaks. Even well-constructed seams with ample sealant can start to wear away over time, allowing water to escape the gutter system.</p>
+
+							<Parallax img={Hunters.Images.gutters2}>
+								A continuous system is a more cost-effective, superior option when you consider the advantages it offers.
+							</Parallax>
+
+							<Hunters.ListItem number={1} title="Maintenance Friendly">
+								No gaps in the gutters means no debris stuck in the seams, which means
+								less work cleaning and maintaining your gutters.
+							</Hunters.ListItem>
+
+							<Hunters.ListItem number={2} title="Material & Color Options">
+								Seamless gutters are available in more materials and colors, giving you
+								more options for that perfect look.
+							</Hunters.ListItem>
+
+							<Hunters.ListItem number={3} title="Less Costly">
+								While they're slightly more expensive to purchase & install, you'll spend
+								a mountain of cash less in maintaining these.
+							</Hunters.ListItem>
+
+							<Hunters.ListItem number={4} title="Aesthetically Awesome">
+								The Seamless gutter just looks better. No fasteners, to gaps, no seams.
+							</Hunters.ListItem>
+
+							<Hunters.ListItem number={5} title="Installation Ease">
+								Faster installation means less time walking around ladders and waiting for us
+								to leave!
+							</Hunters.ListItem>
+
+						</div>
+
+						<Element name="other-services" />
+
+						<div className="page">
+							<h1>Other Services</h1>
+
+							<Hunters.ListItem number={1} title="Soffits & Facia">
+								We install and repair soffits & facia.
+							</Hunters.ListItem>
+
+							<Hunters.ListItem number={2} title="Siding">
+								We install and repair all types of siding, and we're <a href="#" onClick={scrollTo('hardie')}>James Hardie Certified</a>
+							</Hunters.ListItem>
+
+						</div>
+
 						<Element name="quote" />
 
 						<div className="page">
 							<h1>Get a Quote</h1>
-							<p>Fill out this form and provide us some details and we'll give you a call back as soon as possible.</p>
 
-							<Form>
-								<Form.Row>
-									<Col>
-										<InputGroup>
-											<InputGroup.Prepend>
-												<InputGroup.Text>First Name</InputGroup.Text>
-											</InputGroup.Prepend>
-											<Form.Control type={"text"}/>
-										</InputGroup>
-									</Col>
-									<Col>
-										<InputGroup>
-											<InputGroup.Prepend>
-												<InputGroup.Text>Last Name</InputGroup.Text>
-											</InputGroup.Prepend>
-											<Form.Control type={"text"}/>
-										</InputGroup>
-									</Col>
-								</Form.Row>
-								<Form.Row>
-									<Col>
-										<InputGroup>
-											<InputGroup.Prepend>
-												<InputGroup.Text>Email Address</InputGroup.Text>
-											</InputGroup.Prepend>
-											<Form.Control type={"text"}/>
-										</InputGroup>
-									</Col>
-								</Form.Row>
-								<Form.Row>
-									<Col>
-										<InputGroup>
-											<InputGroup.Prepend>
-												<InputGroup.Text>Phone</InputGroup.Text>
-											</InputGroup.Prepend>
-											<Form.Control type={"text"}/>
-										</InputGroup>
-									</Col>
-								</Form.Row>
-								<Form.Row>
-									<Col>
-										<InputGroup>
-											<InputGroup.Prepend>
-												<InputGroup.Text>Details of Job</InputGroup.Text>
-											</InputGroup.Prepend>
-											<Form.Control as={"textarea"}/>
-										</InputGroup>
-									</Col>
-								</Form.Row>
-								<Form.Row>
-									<Col lg={8}/>
-									<Col lg={4}>
-										<Button className="btn-block" variant="primary">Request a Quote!</Button>
-									</Col>
-								</Form.Row>
-							</Form>
+							<p>
+								Call me today at (250) 306 - 6638,
+								email me at <a href={"mailto:hunterexteriorsvernon@gmail.com"}>hunterexteriorsvernon@gmail.com</a>,
+								or <a href={"https://www.facebook.com/hunterexteriors/"} target={"social"}>contact me on Facebook</a> and
+								I'll get you a free quote.
+							</p>
+
+							<p>I provide free quotes and inspections on all roofs, soffits, facia, and siding projects.</p>
+
+							<Image src={Hunters.Images.jesse} rounded style={{ width: '100%' }} />
+
+							{/*<p>Fill out this form and provide us some details and we'll give you a call back as soon as possible.</p>*/}
+
+							{/*<Form>*/}
+							{/*	<Form.Row>*/}
+							{/*		<Col>*/}
+							{/*			<InputGroup>*/}
+							{/*				<InputGroup.Prepend>*/}
+							{/*					<InputGroup.Text>First Name</InputGroup.Text>*/}
+							{/*				</InputGroup.Prepend>*/}
+							{/*				<Form.Control type={"text"}/>*/}
+							{/*			</InputGroup>*/}
+							{/*		</Col>*/}
+							{/*		<Col>*/}
+							{/*			<InputGroup>*/}
+							{/*				<InputGroup.Prepend>*/}
+							{/*					<InputGroup.Text>Last Name</InputGroup.Text>*/}
+							{/*				</InputGroup.Prepend>*/}
+							{/*				<Form.Control type={"text"}/>*/}
+							{/*			</InputGroup>*/}
+							{/*		</Col>*/}
+							{/*	</Form.Row>*/}
+							{/*	<Form.Row>*/}
+							{/*		<Col>*/}
+							{/*			<InputGroup>*/}
+							{/*				<InputGroup.Prepend>*/}
+							{/*					<InputGroup.Text>Email Address</InputGroup.Text>*/}
+							{/*				</InputGroup.Prepend>*/}
+							{/*				<Form.Control type={"text"}/>*/}
+							{/*			</InputGroup>*/}
+							{/*		</Col>*/}
+							{/*	</Form.Row>*/}
+							{/*	<Form.Row>*/}
+							{/*		<Col>*/}
+							{/*			<InputGroup>*/}
+							{/*				<InputGroup.Prepend>*/}
+							{/*					<InputGroup.Text>Phone</InputGroup.Text>*/}
+							{/*				</InputGroup.Prepend>*/}
+							{/*				<Form.Control type={"text"}/>*/}
+							{/*			</InputGroup>*/}
+							{/*		</Col>*/}
+							{/*	</Form.Row>*/}
+							{/*	<Form.Row>*/}
+							{/*		<Col>*/}
+							{/*			<InputGroup>*/}
+							{/*				<InputGroup.Prepend>*/}
+							{/*					<InputGroup.Text>Details of Job</InputGroup.Text>*/}
+							{/*				</InputGroup.Prepend>*/}
+							{/*				<Form.Control as={"textarea"}/>*/}
+							{/*			</InputGroup>*/}
+							{/*		</Col>*/}
+							{/*	</Form.Row>*/}
+							{/*	<Form.Row>*/}
+							{/*		<Col lg={8}/>*/}
+							{/*		<Col lg={4}>*/}
+							{/*			<Button className="btn-block" variant="primary">Request a Quote!</Button>*/}
+							{/*		</Col>*/}
+							{/*	</Form.Row>*/}
+							{/*</Form>*/}
 						</div>
 
 					</Col>
