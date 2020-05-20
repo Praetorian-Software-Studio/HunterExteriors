@@ -26,7 +26,7 @@ function App() {
 
 			<Container>
 				<Row className="LayoutRow">
-					<Col lg={4} className="RedColumn">
+					<Col lg={4} md={12} className="RedColumn">
 						<div className="sticky-top">
 							<img src={Hunters.Images.logoWhite} />
 
@@ -34,17 +34,21 @@ function App() {
 								Your One Stop Shop For High Quality Roofing And Siding Projects
 							</div>
 
-							<div className="contact">
+							<div className="contact" style={{ paddingBottom: '35px' }}>
 								<span className="email">hunterexteriorsvernon@gmail.com</span><br/>
 								<span className="phone">(250) 306 - 6638</span><br/><br/>
 								<a href="https://www.facebook.com/hunterexteriors/" target="social">
 									<FontAwesomeIcon icon={faFacebookSquare} size="2x" color="#FFF"/>
 								</a>
+
+								<div className={"scroll-down"}>
+									Scroll Down for our Services!
+								</div>
 							</div>
 
 						</div>
 					</Col>
-					<Col lg={7} className="WhiteColumn">
+					<Col lg={7} md={12} className="WhiteColumn">
 
 						<Element name="home" />
 
@@ -63,7 +67,7 @@ function App() {
 							</Carousel.Item>
 						</Carousel>
 
-						<Navbar bg="danger" variant="dark" className="sticky-top" style={{ marginRight: "-5%"}}>
+						<Navbar bg="danger" variant="dark" className="main-nav sticky-top">
 							<Nav className="ml-auto">
 								<Nav.Link onClick={scrollTo('home')}>Home</Nav.Link>
 								<Nav.Link onClick={scrollTo('services')}>Services</Nav.Link>
@@ -130,8 +134,8 @@ function App() {
 						<Element name="hardie" />
 
 						<div className="page">
-							<h1>Certified James Hardie Siding Installation</h1>
-							<p>We're certified James Hardie installers. That means that you'll not only have Hardie installed
+							<h1>James Hardie Siding Installation</h1>
+							<p>We're experienced James Hardie installers. That means that you'll not only have Hardie installed
 							on the side of you house, but you'll have it installed right the first time and backed by industry leaders.</p>
 
 							<Parallax img={Hunters.Images.hardie2}>
@@ -297,7 +301,7 @@ function App() {
 							</Hunters.ListItem>
 
 							<Hunters.ListItem number={2} title="Siding">
-								We install and repair all types of siding, and we're <a href="#" onClick={scrollTo('hardie')}>James Hardie Certified</a>
+								We install and repair all types of siding, and we're experienced <a href="#" onClick={scrollTo('hardie')}>James Hardie Installers</a>
 							</Hunters.ListItem>
 
 						</div>
@@ -379,7 +383,7 @@ function App() {
 						</div>
 
 					</Col>
-					<Col lg={1} className="RedColumn">&nbsp;</Col>
+					<Col lg={1} md={0} className="RedColumn hidden-md">&nbsp;</Col>
 				</Row>
 			</Container>
 
