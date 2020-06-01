@@ -1,6 +1,9 @@
 import React from "react";
 import {Button, Col, Form, InputGroup} from "react-bootstrap";
-import axios from 'axios';
+import Amplify, { API } from 'aws-amplify';
+import aws_exports from '../aws-exports';
+Amplify.configure(aws_exports);
+
 
 function Quote( props:{} ){
 
@@ -11,22 +14,15 @@ function Quote( props:{} ){
 		const phone = document.getElementById('phone') as HTMLInputElement;
 		const details = document.getElementById('details') as HTMLTextAreaElement;
 
-		console.log(process.env.API_URL, process.env.API_KEY);
-
-		axios({
-			url: process.env.API_URL,
-			method: 'post',
-			headers: {
-				'x-api-key': process.env.API_KEY
-			},
-			data: {
-				name: name.value,
-				email: email.value,
-				phone: phone.value,
-				details: details.value
-			}
-		}).then( response => {
+		API.post('api797228ba', '/quotes', { body: {
+			name: name.value,
+			email: email.value,
+			phone: phone.value,
+			details: details.value
+		}}).then( response => {
 			console.log( response );
+		}).catch( error => {
+			console.log( error );
 		});
 
 	};
