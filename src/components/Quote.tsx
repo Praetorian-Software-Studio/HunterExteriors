@@ -46,7 +46,7 @@ function Quote( props:{} ){
 							<InputGroup.Prepend>
 								<InputGroup.Text>Email Address</InputGroup.Text>
 							</InputGroup.Prepend>
-							<Form.Control type={"text"} id="email"/>
+							<Form.Control type={"email"} id="email"/>
 						</InputGroup>
 					</Col>
 				</Form.Row>
@@ -56,7 +56,7 @@ function Quote( props:{} ){
 							<InputGroup.Prepend>
 								<InputGroup.Text>Phone</InputGroup.Text>
 							</InputGroup.Prepend>
-							<Form.Control type={"text"} id="phone"/>
+							<Form.Control type={"phone"} id="phone"/>
 						</InputGroup>
 					</Col>
 				</Form.Row>

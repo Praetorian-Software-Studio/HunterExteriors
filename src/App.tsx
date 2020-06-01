@@ -192,6 +192,14 @@ function App() {
 								Hardie Siding provides the same beautiful wood grain finish as traditional wooden siding without the issues of wood and without the cheaper plastic look of vinyl
 							</Hunters.ListItem>
 
+							<Row>
+								<Col lg={8}/>
+								<Col lg={4}>
+									<br/>
+									<Button className="btn-block" variant="primary" onClick={scrollTo('quote')}>Request a Quote!</Button>
+								</Col>
+							</Row>
+
 						</div>
 
 						<Element name="iko-armour" />
@@ -231,6 +239,14 @@ function App() {
 								Mimicking the beautiful in demand look of wood shakes without the yearly maintenance costs and while providing better protection for your home these singles are truly the best of both worlds, looking and performing amazing. The subtle color gradients are similar to the luxurious look of random cut cedar wood shakes at a much more reasonable cost. Made with advanced color blending technology and deep cuts these premium laminated shingles look and perform amazing
 							</Hunters.ListItem>
 
+							<Row>
+								<Col lg={8}/>
+								<Col lg={4}>
+									<br/>
+									<Button className="btn-block" variant="primary" onClick={scrollTo('quote')}>Request a Quote!</Button>
+								</Col>
+							</Row>
+
 						</div>
 
 						<Element name="iko-cambridge" />
@@ -266,6 +282,14 @@ function App() {
 							<Hunters.ListItem number={6} title="Aesthetically Pleasing">
 								The modern, laminated two-piece design of IKO Cambridge shingles provides depth and dimension. By staggering the size and position of the shingle’s “dragon’s teeth”, we’re able to create a random, varied pattern that emulates the rich textured appearance of genuine wood shakes. Deep shadow bands add eye-popping contrast.
 							</Hunters.ListItem>
+
+							<Row>
+								<Col lg={8}/>
+								<Col lg={4}>
+									<br/>
+									<Button className="btn-block" variant="primary" onClick={scrollTo('quote')}>Request a Quote!</Button>
+								</Col>
+							</Row>
 
 						</div>
 
@@ -303,6 +327,14 @@ function App() {
 								to leave!
 							</Hunters.ListItem>
 
+							<Row>
+								<Col lg={8}/>
+								<Col lg={4}>
+									<br/>
+									<Button className="btn-block" variant="primary" onClick={scrollTo('quote')}>Request a Quote!</Button>
+								</Col>
+							</Row>
+
 						</div>
 
 						<Element name="other-services" />
@@ -334,6 +366,14 @@ function App() {
 							<p>I provide free quotes and inspections on all roofs, soffits, facia, and siding projects.</p>
 
 							<Image src={Hunters.Images.jesse} rounded style={{ width: '100%' }} />
+
+							<Row>
+								<Col lg={8}/>
+								<Col lg={4}>
+									<br/>
+									<Button className="btn-block" variant="primary" onClick={scrollTo('quote')}>Request a Quote!</Button>
+								</Col>
+							</Row>
 
 						</div>
 
