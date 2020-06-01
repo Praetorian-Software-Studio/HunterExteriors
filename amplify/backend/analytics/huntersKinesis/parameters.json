@@ -1,0 +1,12 @@
+{
+    "kinesisStreamName": "huntersKinesis",
+    "kinesisStreamShardCount": 1,
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authPolicyName": "kinesis_amplify_586b1474",
+    "unauthPolicyName": "kinesis_amplify_586b1474"
+}

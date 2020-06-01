@@ -14,7 +14,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 
 	min-height: 100vh;
-	background-color: #111;
+	background-color: #b5141c;
 
 }
 
@@ -42,8 +42,15 @@ body {
 				font-weight: bold;
 
 				.contact {
+
 					margin-top: 35px;
 					text-align: center;
+
+					.email {
+						a {
+							color: #FFF;
+						}
+					}
 
 					.scroll-down {
 
@@ -64,7 +71,7 @@ body {
 
 				.motto {
 					font-family: 'Lato', sans-serif;
-					font-size: 2em;
+					font-size: 1.7em;
 					text-align: center;
 					margin-top: 35px;
 				}
@@ -89,6 +96,11 @@ body {
 					@media (min-width: 792px) {
 						margin-right: -5%;
 					}
+
+					&.navbar-dark {
+						background-color: #000 !important;
+					}
+
 				}
 
 				.carousel-control-next,

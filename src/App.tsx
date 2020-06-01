@@ -7,6 +7,7 @@ import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 
 import Parallax from "./components/Parallax";
 import { scroller } from 'react-scroll';
+import Quote from "./components/Quote";
 
 function App() {
 
@@ -31,11 +32,13 @@ function App() {
 							<img src={Hunters.Images.logoWhite} />
 
 							<div className="motto">
-								Your One Stop Shop For High Quality Roofing And Siding Projects
+								Done Right the First Time
 							</div>
 
 							<div className="contact" style={{ paddingBottom: '35px' }}>
-								<span className="email">hunterexteriorsvernon@gmail.com</span><br/>
+								<span className="email">
+									<a href={"mailto:hunterexteriorsvernon@gmail.com"}>hunterexteriorsvernon@gmail.com</a>
+								</span><br/>
 								<span className="phone">(250) 306 - 6638</span><br/><br/>
 								<a href="https://www.facebook.com/hunterexteriors/" target="social">
 									<FontAwesomeIcon icon={faFacebookSquare} size="2x" color="#FFF"/>
@@ -67,11 +70,11 @@ function App() {
 							</Carousel.Item>
 						</Carousel>
 
-						<Navbar bg="danger" variant="dark" className="main-nav sticky-top">
+						<Navbar bg="dark" variant="dark" className="main-nav sticky-top">
 							<Nav className="ml-auto">
 								<Nav.Link onClick={scrollTo('home')}>Home</Nav.Link>
-								<Nav.Link onClick={scrollTo('services')}>Services</Nav.Link>
 								<Nav.Link onClick={scrollTo('quote')}>Get a Quote</Nav.Link>
+								<Nav.Link onClick={scrollTo('services')}>Services</Nav.Link>
 							</Nav>
 						</Navbar>
 
@@ -79,6 +82,17 @@ function App() {
 							<h1>It's More Than Just a Roof</h1>
 							<p>A roof is more than simply a covering for the top of your house. It keeps the elements at bay while giving your property a distinctive look. If you’re looking for a professional roof installer, Hunter Exteriors has your home covered. Specializing in Sloped Roofing and Siding, Hunter Exterior offers a variety of products to make your house SHINE again!</p>
 							<p>Here at Hunter Exteriors we understand how important your house is to you not only as an investment but also as a place you can be proud to call your home. We take that to heart and are proud to offer the highest quality work at affordable prices. Making our customers happy and making your house shine is our ultimate goal whether that be a new roof, siding project or simply some repairs to keep your house looking and performing like it should!</p>
+						</div>
+
+						<Element name="quote" />
+
+						<div className="page">
+							<h1>Get a Quote</h1>
+
+							<p>I provide free quotes and inspections on all roofs, soffits, facia, and siding projects.</p>
+
+							<Quote/>
+
 						</div>
 
 						<Element name="services" />
@@ -306,9 +320,8 @@ function App() {
 
 						</div>
 
-						<Element name="quote" />
-
 						<div className="page">
+
 							<h1>Get a Quote</h1>
 
 							<p>
@@ -322,64 +335,6 @@ function App() {
 
 							<Image src={Hunters.Images.jesse} rounded style={{ width: '100%' }} />
 
-							{/*<p>Fill out this form and provide us some details and we'll give you a call back as soon as possible.</p>*/}
-
-							{/*<Form>*/}
-							{/*	<Form.Row>*/}
-							{/*		<Col>*/}
-							{/*			<InputGroup>*/}
-							{/*				<InputGroup.Prepend>*/}
-							{/*					<InputGroup.Text>First Name</InputGroup.Text>*/}
-							{/*				</InputGroup.Prepend>*/}
-							{/*				<Form.Control type={"text"}/>*/}
-							{/*			</InputGroup>*/}
-							{/*		</Col>*/}
-							{/*		<Col>*/}
-							{/*			<InputGroup>*/}
-							{/*				<InputGroup.Prepend>*/}
-							{/*					<InputGroup.Text>Last Name</InputGroup.Text>*/}
-							{/*				</InputGroup.Prepend>*/}
-							{/*				<Form.Control type={"text"}/>*/}
-							{/*			</InputGroup>*/}
-							{/*		</Col>*/}
-							{/*	</Form.Row>*/}
-							{/*	<Form.Row>*/}
-							{/*		<Col>*/}
-							{/*			<InputGroup>*/}
-							{/*				<InputGroup.Prepend>*/}
-							{/*					<InputGroup.Text>Email Address</InputGroup.Text>*/}
-							{/*				</InputGroup.Prepend>*/}
-							{/*				<Form.Control type={"text"}/>*/}
-							{/*			</InputGroup>*/}
-							{/*		</Col>*/}
-							{/*	</Form.Row>*/}
-							{/*	<Form.Row>*/}
-							{/*		<Col>*/}
-							{/*			<InputGroup>*/}
-							{/*				<InputGroup.Prepend>*/}
-							{/*					<InputGroup.Text>Phone</InputGroup.Text>*/}
-							{/*				</InputGroup.Prepend>*/}
-							{/*				<Form.Control type={"text"}/>*/}
-							{/*			</InputGroup>*/}
-							{/*		</Col>*/}
-							{/*	</Form.Row>*/}
-							{/*	<Form.Row>*/}
-							{/*		<Col>*/}
-							{/*			<InputGroup>*/}
-							{/*				<InputGroup.Prepend>*/}
-							{/*					<InputGroup.Text>Details of Job</InputGroup.Text>*/}
-							{/*				</InputGroup.Prepend>*/}
-							{/*				<Form.Control as={"textarea"}/>*/}
-							{/*			</InputGroup>*/}
-							{/*		</Col>*/}
-							{/*	</Form.Row>*/}
-							{/*	<Form.Row>*/}
-							{/*		<Col lg={8}/>*/}
-							{/*		<Col lg={4}>*/}
-							{/*			<Button className="btn-block" variant="primary">Request a Quote!</Button>*/}
-							{/*		</Col>*/}
-							{/*	</Form.Row>*/}
-							{/*</Form>*/}
 						</div>
 
 					</Col>

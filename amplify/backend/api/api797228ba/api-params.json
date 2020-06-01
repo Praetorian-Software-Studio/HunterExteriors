@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/quotes",
+            "lambdaFunction": "hunters90975643",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "api797228ba",
+    "apiName": "api797228ba",
+    "functionArns": [
+        {
+            "lambdaFunction": "hunters90975643"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-hunters-prod-83636-authRole",
+        "unAuthRoleName": "amplify-hunters-prod-83636-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "hunters90975643",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
