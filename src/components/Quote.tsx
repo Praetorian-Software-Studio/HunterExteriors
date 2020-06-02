@@ -1,5 +1,5 @@
-import React from "react";
-import {Button, Col, Form, InputGroup} from "react-bootstrap";
+import React, {useState} from "react";
+import {Button, Col, Form, InputGroup, Alert} from "react-bootstrap";
 import Amplify, { API } from 'aws-amplify';
 import aws_exports from '../aws-exports';
 Amplify.configure(aws_exports);
@@ -7,8 +7,11 @@ Amplify.configure(aws_exports);
 
 function Quote( props:{} ){
 
+	const [ status, setStatus ] = useState('ready');
+
 	const sendQuote = ( event:any ) => {
 
+		setStatus('sending');
 		const name = document.getElementById('name') as HTMLInputElement;
 		const email = document.getElementById('email') as HTMLInputElement;
 		const phone = document.getElementById('phone') as HTMLInputElement;
@@ -20,15 +23,22 @@ function Quote( props:{} ){
 			phone: phone.value,
 			details: details.value
 		}}).then( response => {
-			console.log( response );
+
+			setStatus('complete');
+			setTimeout(()=>setStatus('ready'), 5000);
+
 		}).catch( error => {
-			console.log( error );
+
+			setStatus('error');
+			setTimeout(()=>setStatus('ready'), 5000);
+
 		});
 
 	};
 
 	return (
 		<>
+			{ status === 'ready' &&
 			<Form>
 				<Form.Row>
 					<Col>
@@ -76,7 +86,25 @@ function Quote( props:{} ){
 						<Button className="btn-block" variant="primary" onClick={sendQuote}>Request a Quote!</Button>
 					</Col>
 				</Form.Row>
-			</Form>
+			</Form>}
+
+			{ status === 'sending' && <>
+				<Alert variant="secondary">
+					<p>Sending...</p>
+				</Alert>
+			</>}
+
+			{ status === 'complete' && <>
+				<Alert variant="primary">
+					<p>Thank You! We'll get back to you as soon as we're off the roof!</p>
+				</Alert>
+			</>}
+
+			{ status === 'error' && <>
+				<Alert variant="warning">
+					<p>Something happened and we didn't get those details. Give us a call at (250) 306 - 6638 and we'll discuss it with you!</p>
+				</Alert>
+			</>}
 		</>
 	)
 

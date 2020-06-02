@@ -1,5 +1,5 @@
 import React from 'react';
-import {Carousel, Col, Container, Figure, Image, Nav, Navbar, Row, Form, InputGroup, Button} from "react-bootstrap";
+import {Carousel, Col, Container, Figure, Image, Nav, Navbar, Row, Button} from "react-bootstrap";
 import {Element} from "react-scroll/modules";
 import Hunters from "./components/Hunters";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

@@ -72,7 +72,7 @@
 				"Timeout": "25",
 				"Code": {
 					"S3Bucket": "amplify-hunters-prod-83636-deployment",
-					"S3Key": "amplify-builds/hunters90975643-2f586a6a383076484b2b-build.zip"
+					"S3Key": "amplify-builds/hunters90975643-3637454567462f627550-build.zip"
 				}
 			}
 		},
