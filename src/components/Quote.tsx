@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Button, Col, Form, InputGroup, Alert} from "react-bootstrap";
 import Amplify, { API } from 'aws-amplify';
-import aws_exports from '../aws-exports';
+import aws_exports from '../aws-exports.js';
 Amplify.configure(aws_exports);
 
 
