@@ -29,7 +29,7 @@ function App() {
 				<Row className="LayoutRow">
 					<Col lg={4} md={12} className="RedColumn">
 						<div className="sticky-top">
-							<img src={Hunters.Images.logoWhite} />
+							<img alt='' src={Hunters.Images.logoWhite} />
 
 							<div className="motto">
 								Done Right the First Time
@@ -57,16 +57,16 @@ function App() {
 
 						<Carousel>
 							<Carousel.Item>
-								<img src={Hunters.Images.experts} className="d-block w-100" style={{ height: '350px', objectFit:'cover' }} />
+								<img alt='' src={Hunters.Images.experts} className="d-block w-100" style={{ height: '350px', objectFit:'cover' }} />
 							</Carousel.Item>
 							<Carousel.Item>
-								<img src={Hunters.Images.seamlessEaves} className="d-block w-100" style={{ height: '350px', objectFit:'cover' }} />
+								<img alt='' src={Hunters.Images.seamlessEaves} className="d-block w-100" style={{ height: '350px', objectFit:'cover' }} />
 							</Carousel.Item>
 							<Carousel.Item>
-								<img src={Hunters.Images.callToday} className="d-block w-100" style={{ height: '350px', objectFit:'cover' }} />
+								<img alt='' src={Hunters.Images.callToday} className="d-block w-100" style={{ height: '350px', objectFit:'cover' }} />
 							</Carousel.Item>
 							<Carousel.Item>
-								<img src={Hunters.Images.springSavings} className="d-block w-100" style={{ height: '350px', objectFit:'cover' }} />
+								<img alt='' src={Hunters.Images.springSavings} className="d-block w-100" style={{ height: '350px', objectFit:'cover' }} />
 							</Carousel.Item>
 						</Carousel>
 
@@ -347,7 +347,7 @@ function App() {
 							</Hunters.ListItem>
 
 							<Hunters.ListItem number={2} title="Siding">
-								We install and repair all types of siding, and we're experienced <a href="#" onClick={scrollTo('hardie')}>James Hardie Installers</a>
+								We install and repair all types of siding, and we're experienced James Hardie Installers
 							</Hunters.ListItem>
 
 						</div>
