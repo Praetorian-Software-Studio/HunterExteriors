@@ -1,8 +1,20 @@
 import React, {useState} from "react";
 import {Button, Col, Form, InputGroup, Alert} from "react-bootstrap";
 import Amplify, { API } from 'aws-amplify';
-import aws_exports from '../aws-exports.js';
-Amplify.configure(aws_exports);
+// import aws_exports from '../aws-exports.js';
+Amplify.configure({
+	"aws_project_region": "us-east-1",
+	"aws_cognito_identity_pool_id": "us-east-1:c8f456df-f75f-4468-9568-5588a5349db1",
+	"aws_cognito_region": "us-east-1",
+	"oauth": {},
+	"aws_cloud_logic_custom": [
+		{
+			"name": "api797228ba",
+			"endpoint": "https://7eqzr4g724.execute-api.us-east-1.amazonaws.com/prod",
+			"region": "us-east-1"
+		}
+	]
+});
 
 
 function Quote( props:{} ){
