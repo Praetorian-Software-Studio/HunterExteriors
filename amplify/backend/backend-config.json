@@ -1,46 +1,6 @@
 {
-	"auth": {
-		"cognito5c14cd98": {
-			"service": "Cognito",
-			"providerPlugin": "awscloudformation"
-		}
-	},
-	"analytics": {
-		"huntersKinesis": {
-			"service": "Kinesis",
-			"providerPlugin": "awscloudformation"
-		}
-	},
-	"function": {
-		"hunters90975643": {
-			"build": true,
-			"providerPlugin": "awscloudformation",
-			"service": "Lambda",
-			"dependsOn": [
-				{
-					"category": "analytics",
-					"resourceName": "huntersKinesis",
-					"attributes": [
-						"kinesisStreamArn"
-					]
-				}
-			]
-		}
-	},
-	"api": {
-		"api797228ba": {
-			"service": "API Gateway",
-			"providerPlugin": "awscloudformation",
-			"dependsOn": [
-				{
-					"category": "function",
-					"resourceName": "hunters90975643",
-					"attributes": [
-						"Name",
-						"Arn"
-					]
-				}
-			]
-		}
-	}
+	"auth": {},
+	"analytics": {},
+	"function": {},
+	"api": {}
 }
