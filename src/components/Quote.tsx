@@ -1,9 +1,6 @@
 import React, {useState} from "react";
 import {Button, Col, Form, InputGroup, Alert} from "react-bootstrap";
-import Amplify, { API } from 'aws-amplify';
-import aws_exports from '../aws-exports';
-Amplify.configure(aws_exports);
-
+import axios from 'axios';
 
 function Quote( props:{} ){
 
@@ -17,12 +14,22 @@ function Quote( props:{} ){
 		const phone = document.getElementById('phone') as HTMLInputElement;
 		const details = document.getElementById('details') as HTMLTextAreaElement;
 
-		API.post('api797228ba', '/quotes', { body: {
-			name: name.value,
-			email: email.value,
-			phone: phone.value,
-			details: details.value
-		}}).then( response => {
+		axios.post('https://api.praetorianstudio.com/emails', {
+			to: "hunterexteriorsvernon@gmail.com",
+			source: "no-reply@hunterexteriors.ca",
+			templateName: "HunterExteriors-RequestQuote",
+			replyTo: email.value,
+			data: {
+				name: name.value,
+				email: email.value,
+				phone: phone.value,
+				details: details.value
+			}
+		}, {
+			headers: {
+				'X-API-Key': '1kfjtgsahn3eiCvquHaI76zxj3lEwDok7fi7gSug'
+			}
+		}).then( response => {
 
 			setStatus('complete');
 			setTimeout(()=>setStatus('ready'), 5000);
